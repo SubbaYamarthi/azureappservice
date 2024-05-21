@@ -21,7 +21,7 @@ resource "azurerm_app_service" "svc123" {
   resource_group_name = azurerm_resource_group.rgsvc123.name
   app_service_plan_id = azurerm_app_service_plan.appsvc123.id
 }
-
+//out put values
 output "app_service_url" {
   value       = azurerm_app_service.svc123.default_site_hostname
   description = "The default hostname of the app service."
